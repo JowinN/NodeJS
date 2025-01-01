@@ -49,3 +49,13 @@ Mongodb in NodeJs using Mongoose
 
 Mongoose ----> MongoDB + NodeJs
 Middleware express
+
+Authentication
+It is the process of verifying the user accessing the web application
+
+Mechanisms to implement Authentication
+
+1. Session Based Authentication
+2. Token Based
+3. Using Middleware :
+    - JwT : json web token
