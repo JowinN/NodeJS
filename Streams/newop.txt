@@ -1,0 +1,5 @@
+I don't have real-time access to the current time, but you can easily check the current time in India (Indian Standard Time, IST) by looking it up on your phone, computer, or using a search engine.
+
+Just to give you a general idea, India follows a time zone of UTC +5:30. So, you can calculate the time difference based on your current location.
+
+Let me know if you need help with anything else!
