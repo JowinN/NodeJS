@@ -1,6 +1,6 @@
 const express = require("express");
+const xss = require("xss"); // Sanitize user input
 const app = express();
-
 
 app.use(express.urlencoded({ extended: true }));
 
@@ -8,15 +8,18 @@ app.get("/", (req, res) => {
   res.send(`
     <form method="POST" action="/submit">
       <input type="text" name="userInput" />
-      <script>alert('XSS');</script>
       <button type="submit">Submit</button>
     </form>
   `);
 });
 
 app.post("/submit", (req, res) => {
-    const userInput = req.body.userInput;
-  res.send(`You entered: ${userInput}`);
+  try {
+    const userInput = xss(req.body.userInput); // Sanitize input
+    res.send(`You entered: ${userInput}`); // Safely render input
+  } catch (err) {
+    res.status(500).send("Error processing input.");
+  }
 });
 
 app.listen(3000, () => {
