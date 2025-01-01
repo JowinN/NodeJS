@@ -59,3 +59,8 @@ Mechanisms to implement Authentication
 2. Token Based
 3. Using Middleware :
     - JwT : json web token
+       - jwt comprises :
+            1. Header Json
+            2. Payload Json
+            3. Signature (optional)
+            => . operator
