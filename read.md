@@ -64,3 +64,16 @@ Mechanisms to implement Authentication
             2. Payload Json
             3. Signature (optional)
             => . operator
+
+Security in NodeJs
+1. Cross-site Scripting Attack
+2. Denial of Service Attacks
+3. using a middleware
+
+# Multer
+- Features : 
+    1. File Uploads
+    2. Middleware
+    3. File Storage
+    4. File Filtering
+    5. Error Handling
